@@ -1,7 +1,7 @@
 package com.AutoScheduler.Domain;
 
 public class Patient {
-	private Therapist lastTherapist;
+	private String lastTherapist;
 	private int daysSinceLastSeen;
 	private int numOfVisits;
 	private int zone;
@@ -9,7 +9,7 @@ public class Patient {
 	private boolean extraWork;
 	private boolean discharged;
 	
-	public Patient(Therapist lastTherapist, int daysSinceLastSeen, int numOfVisits, int zone, boolean hold,
+	public Patient(String lastTherapist, int daysSinceLastSeen, int numOfVisits, int zone, boolean hold,
 			boolean extraWork, boolean discharged) {
 		super();
 		this.lastTherapist = lastTherapist;
@@ -21,11 +21,11 @@ public class Patient {
 		this.discharged = discharged;
 	}
 
-	public Therapist getLastTherapist() {
+	public String getLastTherapist() {
 		return lastTherapist;
 	}
 
-	public void setLastTherapist(Therapist lastTherapist) {
+	public void setLastTherapist(String lastTherapist) {
 		this.lastTherapist = lastTherapist;
 	}
 
